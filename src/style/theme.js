@@ -8,12 +8,11 @@ const theme = {
     desktopXL: '125em', // 2000px
   },
   color: {
-    primary: '#1890FF',
-    grey: '#d9d9d9',
-    lightGrey: '#fafafa',
     white: '#FFFFFF',
-    background: '#F0F2F5',
-    red: '#ff4d4f',
+    textDarkHighPriority: '#171518',
+    textDarkLowPriority: '#8F8F8F',
+    primaryRed: '#E91C1C',
+    primaryGreen: '#00EB3E',
   },
   font: {
     primary: 'Poppins, sans-serif',

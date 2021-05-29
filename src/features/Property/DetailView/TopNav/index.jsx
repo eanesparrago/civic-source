@@ -37,6 +37,8 @@ function TopNav() {
       <SmallBlock>
         <SortButton />
       </SmallBlock>
+
+      <ScTranslucentBackground />
     </ScTopNav>
   );
 }
@@ -48,8 +50,6 @@ const ScTopNav = styled.div`
   padding-right: 10.75rem;
   display: flex;
   align-items: center;
-  background-color: ${(p) => p.theme.color.white};
-  opacity: 0.85;
   z-index: 1;
 `;
 
@@ -63,6 +63,17 @@ const SmallBlock = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+`;
+
+const ScTranslucentBackground = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: ${(p) => p.theme.color.white};
+  opacity: 0.85;
+  z-index: -1;
 `;
 
 export default TopNav;

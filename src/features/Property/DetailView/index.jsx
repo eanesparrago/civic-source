@@ -1,4 +1,5 @@
 import Background from './Background';
+import Ticker from './Ticker';
 import TopNav from './TopNav';
 
 function DetailView() {
@@ -6,11 +7,11 @@ function DetailView() {
     <div>
       <TopNav />
 
+      <Ticker />
+
       <Background />
     </div>
   );
 }
-
-
 
 export default DetailView;
