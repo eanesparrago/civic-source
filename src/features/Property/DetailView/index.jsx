@@ -1,4 +1,5 @@
 import Background from './Background';
+import Dials from './Dials';
 import Ticker from './Ticker';
 import TopNav from './TopNav';
 
@@ -8,6 +9,8 @@ function DetailView() {
       <TopNav />
 
       <Ticker />
+
+      <Dials />
 
       <Background />
     </div>
