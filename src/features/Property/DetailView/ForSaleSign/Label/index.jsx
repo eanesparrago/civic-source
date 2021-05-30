@@ -7,8 +7,6 @@ function Label({ className }) {
       <ScHouseImg src={houseSvg} alt="Property" />
 
       <ScLabelText>Public Auction</ScLabelText>
-
-      <ScTranslucentBackground />
     </ScLabel>
   );
 }
@@ -18,6 +16,7 @@ const ScLabel = styled.div`
   position: relative;
   display: flex;
   align-items: center;
+  background: rgba(255, 255, 255, 0.66);
 `;
 
 const ScHouseImg = styled.img`
@@ -35,17 +34,6 @@ const ScLabelText = styled.span`
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-`;
-
-const ScTranslucentBackground = styled.div`
-  background-color: ${(p) => p.theme.color.white};
-  opacity: 0.66;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
 `;
 
 export default Label;

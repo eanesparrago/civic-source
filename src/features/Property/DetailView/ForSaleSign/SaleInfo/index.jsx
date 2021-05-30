@@ -12,8 +12,6 @@ function SaleInfo() {
       </AddressBlock>
 
       <ScReserveBidText>Reserve Bid $5,000</ScReserveBidText>
-
-      <ScTranslucentBackground />
     </ScSaleInfo>
   );
 }
@@ -26,6 +24,7 @@ const ScSaleInfo = styled.div`
   padding: 1.5rem 2rem;
   text-align: center;
   color: ${(p) => p.theme.color.textDarkHighPriority};
+  background: rgba(255, 255, 255, 0.86);
 `;
 
 const ScMarketValueText = styled.div`
@@ -33,7 +32,6 @@ const ScMarketValueText = styled.div`
   font-size: 1.3125rem;
   letter-spacing: 0.125rem;
   margin-bottom: 1.5rem;
-  line-height: 150%;
 `;
 
 const AddressBlock = styled.div`
@@ -60,17 +58,6 @@ const ScReserveBidText = styled.div`
   font-weight: 200;
   font-size: 0.9rem;
   letter-spacing: 0.125rem;
-`;
-
-const ScTranslucentBackground = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: ${(p) => p.theme.color.white};
-  opacity: 0.86;
-  z-index: -1;
 `;
 
 export default SaleInfo;
