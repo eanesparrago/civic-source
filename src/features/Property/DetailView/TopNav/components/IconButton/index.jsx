@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 function IconButton({ imgSrc, imgAlt }) {
   return (
@@ -18,5 +19,10 @@ const ScImg = styled.img`
   width: 100%;
   object-fit: contain;
 `;
+
+IconButton.propTypes = {
+  imgSrc: PropTypes.string.isRequired,
+  imgAlt: PropTypes.string.isRequired,
+};
 
 export default IconButton;

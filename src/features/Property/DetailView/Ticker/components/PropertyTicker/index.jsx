@@ -6,6 +6,7 @@ import RedTickerText from '../RedTickerText';
 import GreenArrow from './GreenArrow';
 import GreyArrow from './GreyArrow';
 import RedArrow from './RedArrow';
+import PropTypes from 'prop-types';
 
 function PropertyTicker({
   addressText,
@@ -64,5 +65,12 @@ const PriceInfoBlock = styled.div`
     margin-right: 1.5em;
   }
 `;
+
+PropertyTicker.propTypes = {
+  addressText: PropTypes.node.isRequired,
+  priceUpdateText: PropTypes.node,
+  priceText: PropTypes.node.isRequired,
+  variant: PropTypes.node.isRequired,
+};
 
 export default PropertyTicker;

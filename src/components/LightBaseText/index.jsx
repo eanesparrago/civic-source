@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 function LightBaseText({ className, children }) {
   return (
@@ -17,5 +18,10 @@ const ScLightBaseText = styled.div`
     line-height: 100%;
   }
 `;
+
+LightBaseText.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
 
 export default LightBaseText;

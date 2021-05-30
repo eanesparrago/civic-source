@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 function DisplayText1({ className, children }) {
   return (
@@ -17,5 +18,10 @@ const ScDisplayText1 = styled.div`
     line-height: 100%;
   }
 `;
+
+DisplayText1.propTypes = {
+  className: PropTypes.string,
+  children: PropTypes.node.isRequired,
+};
 
 export default DisplayText1;

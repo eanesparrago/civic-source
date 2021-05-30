@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import MediumBaseText from 'components/MediumBaseText';
+import PropTypes from 'prop-types';
 
 function OpaqueTickerComp({ labelText, value }) {
   return (
@@ -19,6 +20,11 @@ const ScOpaqueTickerComp = styled.div`
 
 const ScLabelText = styled(MediumBaseText)`
   margin-bottom: 0.25em;
-`
+`;
+
+OpaqueTickerComp.propTypes = {
+  labelText: PropTypes.node.isRequired,
+  value: PropTypes.node.isRequired,
+};
 
 export default OpaqueTickerComp;
