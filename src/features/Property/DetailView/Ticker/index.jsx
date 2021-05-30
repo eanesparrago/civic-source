@@ -53,8 +53,6 @@ function Ticker() {
 
         <OutbidPrice />
       </PriceTickersBlock>
-
-      <ScTranslucentBackground />
     </ScTicker>
   );
 }
@@ -63,6 +61,7 @@ const ScTicker = styled.div`
   position: relative;
   display: flex;
   z-index: 1;
+  background: rgba(255, 255, 255, 0.5);
 
   @media (max-width: ${(p) => p.theme.breakpoint.desktopL}) {
     font-size: 0.9rem;
@@ -81,17 +80,6 @@ const QuantityTickersBlock = styled.div`
 
 const PriceTickersBlock = styled.div`
   display: flex;
-`;
-
-const ScTranslucentBackground = styled.div`
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-  background-color: ${(p) => p.theme.color.white};
-  opacity: 0.5;
 `;
 
 export default Ticker;
