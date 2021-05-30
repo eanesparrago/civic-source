@@ -18,7 +18,7 @@ const ScMarketValue = styled.div`
   text-align: center;
 
   > *:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5em;
   }
 `;
 
