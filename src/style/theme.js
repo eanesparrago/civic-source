@@ -13,6 +13,7 @@ const theme = {
     textDarkLowPriority: '#8F8F8F',
     primaryRed: '#E91C1C',
     primaryGreen: '#00EB3E',
+    blue: '#052dea',
   },
   font: {
     primary: 'Poppins, sans-serif',
