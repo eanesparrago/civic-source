@@ -16,6 +16,7 @@ const ScDials = styled.div`
   right: 0;
   bottom: 0;
   z-index: 2;
+  pointer-events: none;
 `;
 
 const Dial = styled.div`
@@ -23,20 +24,22 @@ const Dial = styled.div`
   width: 16rem;
   height: 16rem;
   border-radius: 10000px;
+  cursor: pointer;
+  pointer-events: all;
 `;
 
 const ScLeftDial = styled(Dial)`
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%) translateX(-80%);
+  transform: translateY(-50%) translateX(-85%);
 `;
 
 const ScRightDial = styled(Dial)`
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%) translateX(80%);
+  transform: translateY(-50%) translateX(85%);
 `;
 
 export default Dials;
