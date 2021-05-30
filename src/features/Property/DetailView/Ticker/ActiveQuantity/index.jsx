@@ -1,11 +1,11 @@
-import OpaqueTickerComp from 'components/OpaqueTickerComp';
-import GreyTickerText from 'components/GreyTickerText';
+import OpaqueTickerComp from '../components/OpaqueTickerComp';
+import GreyTickerText from '../components/GreyTickerText';
 
 function ActiveQuantity() {
   return (
     <OpaqueTickerComp
       labelText="Active"
-      value={<GreyTickerText>12</GreyTickerText>}
+      value={<GreyTickerText>24</GreyTickerText>}
     />
   );
 }

@@ -18,7 +18,7 @@ const ScOpaqueTickerComp = styled.div`
 `;
 
 const ScLabelText = styled(MediumBaseText)`
-  margin-bottom: 0.125rem;
+  margin-bottom: 0.25rem;
 `
 
 export default OpaqueTickerComp;

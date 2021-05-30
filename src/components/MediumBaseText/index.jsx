@@ -8,6 +8,7 @@ const ScMediumBaseText = styled.div`
   font-size: 1.125rem;
   font-weight: 500;
   color: ${(p) => p.theme.color.textDarkHighPriority};
+  line-height: 100%;
 `;
 
 export default MediumBaseText;

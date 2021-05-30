@@ -1,5 +1,5 @@
-import OpaqueTickerComp from 'components/OpaqueTickerComp';
-import RedTickerText from 'components/RedTickerText';
+import OpaqueTickerComp from '../components/OpaqueTickerComp';
+import RedTickerText from '../components/RedTickerText';
 
 function OutbidQuantity() {
   return (

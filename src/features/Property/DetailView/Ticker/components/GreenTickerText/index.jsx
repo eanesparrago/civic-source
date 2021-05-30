@@ -9,6 +9,7 @@ function GreenTickerText({ className, children }) {
 
 const ScGreenTickerText = styled(MediumBaseText)`
   color: ${(p) => p.theme.color.primaryGreen};
+  line-height: 100%;
 `;
 
 export default GreenTickerText;

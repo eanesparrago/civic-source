@@ -1,5 +1,5 @@
-import OpaqueTickerComp from 'components/OpaqueTickerComp';
-import GreenTickerText from 'components/GreenTickerText';
+import OpaqueTickerComp from '../components/OpaqueTickerComp';
+import GreenTickerText from '../components/GreenTickerText';
 
 function WinningQuantity() {
   return (

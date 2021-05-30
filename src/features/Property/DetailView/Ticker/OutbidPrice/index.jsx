@@ -1,11 +1,11 @@
-import OpaqueTickerComp from 'components/OpaqueTickerComp';
-import RedTickerText from 'components/RedTickerText';
+import OpaqueTickerComp from '../components/OpaqueTickerComp';
+import RedTickerText from '../components/RedTickerText';
 
 function OutbidPrice() {
   return (
     <OpaqueTickerComp
       labelText="Outbid"
-      value={<RedTickerText>12</RedTickerText>}
+      value={<RedTickerText>$100,000</RedTickerText>}
     />
   );
 }

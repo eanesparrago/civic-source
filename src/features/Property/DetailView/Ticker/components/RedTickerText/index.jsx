@@ -7,6 +7,7 @@ function RedTickerText({ className, children }) {
 
 const ScRedTickerText = styled(MediumBaseText)`
   color: ${(p) => p.theme.color.primaryRed};
+  line-height: 100%;
 `;
 
 export default RedTickerText;

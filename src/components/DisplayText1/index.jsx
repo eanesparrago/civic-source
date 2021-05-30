@@ -7,6 +7,7 @@ function DisplayText1({ className, children }) {
 const ScDisplayText1 = styled.div`
   font-size: 2.875rem;
   font-weight: 300;
+  line-height: 100%;
 `;
 
 export default DisplayText1;

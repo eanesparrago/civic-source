@@ -1,5 +1,5 @@
-import OpaqueTickerComp from 'components/OpaqueTickerComp';
-import GreyTickerText from 'components/GreyTickerText';
+import OpaqueTickerComp from '../components/OpaqueTickerComp';
+import GreyTickerText from '../components/GreyTickerText';
 
 function ActivePrice() {
   return (
