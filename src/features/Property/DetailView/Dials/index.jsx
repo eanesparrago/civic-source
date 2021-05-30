@@ -17,12 +17,16 @@ const ScDials = styled.div`
   bottom: 0;
   z-index: 2;
   pointer-events: none;
+
+  @media (max-width: ${(p) => p.theme.breakpoint.desktopL}) {
+    font-size: 0.9rem;
+  }
 `;
 
 const Dial = styled.div`
   background-color: #d8d8d8;
-  width: 16rem;
-  height: 16rem;
+  width: 16em;
+  height: 16em;
   border-radius: 10000px;
   cursor: pointer;
   pointer-events: all;
