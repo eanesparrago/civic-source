@@ -1,11 +1,8 @@
-import wishlistSvg from './wishlist.svg'
+import IconButton from '../components/IconButton';
+import wishlistSvg from './wishlist.svg';
 
 function WishlistButton() {
-  return (
-    <div>
-      <img src={wishlistSvg} alt="Wishlist" />
-    </div>
-  )
+  return <IconButton imgSrc={wishlistSvg} imgAlt="Wishlist" />;
 }
 
-export default WishlistButton
+export default WishlistButton;

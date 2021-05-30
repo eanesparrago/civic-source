@@ -1,11 +1,8 @@
+import IconButton from '../components/IconButton';
 import mapPinSvg from './mapPin.svg';
 
 function MapPinButton() {
-  return (
-    <div>
-      <img src={mapPinSvg} alt="Map pin" />
-    </div>
-  );
+  return <IconButton imgSrc={mapPinSvg} imgAlt="Map pin" />;
 }
 
 export default MapPinButton;

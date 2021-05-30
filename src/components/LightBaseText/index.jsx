@@ -5,7 +5,7 @@ function LightBaseText({ className, children }) {
 }
 
 const ScLightBaseText = styled.div`
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 200;
   line-height: 100%;
 `;

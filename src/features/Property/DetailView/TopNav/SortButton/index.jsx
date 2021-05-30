@@ -1,11 +1,8 @@
+import IconButton from '../components/IconButton';
 import sortSvg from './sort.svg';
 
 function SortButton() {
-  return (
-    <div>
-      <img src={sortSvg} alt="Sort" />
-    </div>
-  );
+  return <IconButton imgSrc={sortSvg} imgAlt="Sort" />;
 }
 
 export default SortButton;

@@ -45,17 +45,21 @@ function TopNav() {
 
 const ScTopNav = styled.div`
   position: relative;
-  height: 15rem;
-  padding-left: 10.75rem;
-  padding-right: 10.75rem;
+  padding: 3em 10.75em;
   display: flex;
   align-items: center;
   z-index: 1;
+
+  @media (max-width: ${(p) => p.theme.breakpoint.desktopL}) {
+    font-size: 0.9rem;
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
 `;
 
 const BigBlock = styled.div`
   flex-grow: 2;
-  width: 28.5rem;
+  width: 28.5em;
 `;
 
 const SmallBlock = styled.div`

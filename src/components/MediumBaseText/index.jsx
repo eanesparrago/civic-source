@@ -5,7 +5,7 @@ function MediumBaseText({ className, children }) {
 }
 
 const ScMediumBaseText = styled.div`
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 500;
   color: ${(p) => p.theme.color.textDarkHighPriority};
   line-height: 100%;
