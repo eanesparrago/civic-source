@@ -4,7 +4,7 @@ import ForSaleSign from './ForSaleSign';
 import Ticker from './Ticker';
 import TopNav from './TopNav';
 
-function DetailView() {
+function PropertyDetailView() {
   return (
     <div>
       <TopNav />
@@ -20,4 +20,4 @@ function DetailView() {
   );
 }
 
-export default DetailView;
+export default PropertyDetailView;
