@@ -2,16 +2,20 @@ import styled from 'styled-components';
 
 function DisplayText1({ className, children }) {
   return (
-    <div className={className}>
-      <ScDisplayText1>{children}</ScDisplayText1>
-    </div>
+    <ScDisplayText1 className={className}>
+      <span>{children}</span>
+    </ScDisplayText1>
   );
 }
 
 const ScDisplayText1 = styled.div`
-  font-size: 2.875em;
-  font-weight: 300;
-  line-height: 100%;
+  color: ${(p) => p.theme.color.textDarkHighPriority};
+
+  span {
+    font-size: 2.875em;
+    font-weight: 300;
+    line-height: 100%;
+  }
 `;
 
 export default DisplayText1;

@@ -10,6 +10,7 @@ const theme = {
   color: {
     white: '#FFFFFF',
     textDarkHighPriority: '#171518',
+    textDarkMidPriority: '#484848',
     textDarkLowPriority: '#8F8F8F',
     primaryRed: '#E91C1C',
     primaryGreen: '#00EB3E',
