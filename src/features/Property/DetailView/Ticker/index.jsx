@@ -61,9 +61,12 @@ function Ticker() {
 
 const ScTicker = styled.div`
   position: relative;
-  height: 3.75rem;
   display: flex;
   z-index: 1;
+
+  @media (max-width: ${(p) => p.theme.breakpoint.desktopL}) {
+    font-size: 0.9rem;
+  }
 `;
 
 const PropertyTickersBlock = styled.div`

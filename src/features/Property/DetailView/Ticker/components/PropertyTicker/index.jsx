@@ -42,17 +42,17 @@ function PropertyTicker({
 
 const ScPropertyTicker = styled.div`
   height: 100%;
-  padding: 0.5rem 1.5rem;
+  padding: 0.75em 1.5em;
   display: flex;
   align-items: flex-start;
 
   > *:not(:last-child) {
-    margin-right: 0.25rem;
+    margin-right: 0.25em;
   }
 `;
 
 const ScAddressText = styled(MediumBaseText)`
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.25em;
   white-space: nowrap;
 `;
 
@@ -61,7 +61,7 @@ const PriceInfoBlock = styled.div`
   white-space: nowrap;
 
   > *:not(:last-child) {
-    margin-right: 1.5rem;
+    margin-right: 1.5em;
   }
 `;
 

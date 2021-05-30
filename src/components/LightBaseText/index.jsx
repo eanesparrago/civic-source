@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 function LightBaseText({ className, children }) {
-  return <ScLightBaseText className={className}>{children}</ScLightBaseText>;
+  return (
+    <div className={className}>
+      <ScLightBaseText>{children}</ScLightBaseText>
+    </div>
+  );
 }
 
 const ScLightBaseText = styled.div`

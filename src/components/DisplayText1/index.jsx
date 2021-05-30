@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 function DisplayText1({ className, children }) {
-  return <ScDisplayText1 className={className}>{children}</ScDisplayText1>;
+  return (
+    <div className={className}>
+      <ScDisplayText1>{children}</ScDisplayText1>
+    </div>
+  );
 }
 
 const ScDisplayText1 = styled.div`
