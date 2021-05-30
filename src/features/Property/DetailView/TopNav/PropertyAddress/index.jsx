@@ -6,11 +6,13 @@ import DisplayText1 from 'components/DisplayText1';
 function PropertyAddress() {
   return (
     <ScPropertyAddress>
-      <LightBaseText>Own</LightBaseText>
+      <InfoBlock>
+        <LightBaseText>Own</LightBaseText>
 
-      <DisplayText1>14 Flood St.</DisplayText1>
+        <DisplayText1>14 Flood St.</DisplayText1>
 
-      <ScAddress>New Orleans, LA 70122</ScAddress>
+        <LightBaseText>New Orleans, LA 70122</LightBaseText>
+      </InfoBlock>
 
       <img src={housesSvg} alt="" />
     </ScPropertyAddress>
@@ -21,8 +23,12 @@ const ScPropertyAddress = styled.div`
   text-align: center;
 `;
 
-const ScAddress = styled(LightBaseText)`
-  margin-bottom: 0.5rem;
+const InfoBlock = styled.div`
+  margin-bottom: 0.75rem;
+
+  > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 export default PropertyAddress;

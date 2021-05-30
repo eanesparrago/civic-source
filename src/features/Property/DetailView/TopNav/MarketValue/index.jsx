@@ -16,6 +16,10 @@ function MarketValue() {
 
 const ScMarketValue = styled.div`
   text-align: center;
+
+  > *:not(:last-child) {
+    margin-bottom: 0.5rem;
+  }
 `;
 
 export default MarketValue;
