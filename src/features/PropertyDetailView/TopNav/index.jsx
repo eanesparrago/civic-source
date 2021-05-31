@@ -43,9 +43,13 @@ function TopNav() {
 
 const ScTopNav = styled.div`
   position: relative;
-  padding: 3em 10.75em;
+  padding-top: 4rem;
+  padding-bottom: 2.375rem;
+  padding-left: 15rem;
+  padding-right: 15rem;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
   z-index: 1;
   background: rgba(255, 255, 255, 0.85);
 
@@ -62,7 +66,7 @@ const BigBlock = styled.div`
 `;
 
 const SmallBlock = styled.div`
-  flex-grow: 1;
+  /* flex-grow: 1; */
   display: flex;
   justify-content: center;
   align-items: center;

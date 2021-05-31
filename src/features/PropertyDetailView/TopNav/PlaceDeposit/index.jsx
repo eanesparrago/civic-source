@@ -1,15 +1,15 @@
 import styled from 'styled-components';
 import DisplayText1 from 'components/DisplayText1';
-import LightBaseText from 'components/LightBaseText';
+import TopNavLightText from '../components/TopNavLightText';
 
 function PlaceDeposit() {
   return (
     <ScPlaceDeposit>
-      <LightBaseText>To</LightBaseText>
+      <TopNavLightText>To</TopNavLightText>
 
       <DisplayText1>Start</DisplayText1>
 
-      <LightBaseText>Place Deposit</LightBaseText>
+      <TopNavLightText>Place Deposit</TopNavLightText>
     </ScPlaceDeposit>
   );
 }

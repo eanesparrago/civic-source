@@ -1,17 +1,17 @@
 import styled from 'styled-components';
-import LightBaseText from 'components/LightBaseText';
-import housesSvg from './houses.svg';
 import DisplayText1 from 'components/DisplayText1';
+import TopNavLightText from '../components/TopNavLightText';
+import housesSvg from './houses.svg';
 
 function PropertyAddress() {
   return (
     <ScPropertyAddress>
       <InfoBlock>
-        <LightBaseText>Own</LightBaseText>
+        <TopNavLightText>Own</TopNavLightText>
 
         <DisplayText1>14 Flood St.</DisplayText1>
 
-        <LightBaseText>New Orleans, LA 70122</LightBaseText>
+        <TopNavLightText>New Orleans, LA 70122</TopNavLightText>
       </InfoBlock>
 
       <img src={housesSvg} alt="" />

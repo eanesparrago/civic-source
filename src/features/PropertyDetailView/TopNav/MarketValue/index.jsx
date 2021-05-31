@@ -1,15 +1,15 @@
-import DisplayText1 from 'components/DisplayText1';
-import LightBaseText from 'components/LightBaseText';
 import styled from 'styled-components';
+import DisplayText1 from 'components/DisplayText1';
+import TopNavLightText from '../components/TopNavLightText';
 
 function MarketValue() {
   return (
     <ScMarketValue>
-      <LightBaseText>Market $40,000</LightBaseText>
+      <TopNavLightText>Market $40,000</TopNavLightText>
 
       <DisplayText1>$5,000</DisplayText1>
 
-      <LightBaseText>Reserve Price</LightBaseText>
+      <TopNavLightText>Reserve Price</TopNavLightText>
     </ScMarketValue>
   );
 }
