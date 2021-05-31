@@ -1,21 +1,13 @@
 import styled from 'styled-components';
-import MediumBaseText from 'components/MediumBaseText';
-import PropTypes from 'prop-types';
+import TickerMediumText from '../TickerMediumText';
 
-function GreenTickerText({ className, children }) {
-  return (
-    <ScGreenTickerText className={className}>{children}</ScGreenTickerText>
-  );
+function GreenTickerText({ children, ...rest }) {
+  return <ScGreenTickerText {...rest}>{children}</ScGreenTickerText>;
 }
 
-const ScGreenTickerText = styled(MediumBaseText)`
+const ScGreenTickerText = styled(TickerMediumText)`
   color: ${(p) => p.theme.color.primaryGreen};
   line-height: 100%;
 `;
-
-GreenTickerText.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default GreenTickerText;

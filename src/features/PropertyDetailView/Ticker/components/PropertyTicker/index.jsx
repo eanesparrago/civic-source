@@ -1,19 +1,14 @@
 import styled from 'styled-components';
-import LightBaseText from 'components/LightBaseText';
-import MediumBaseText from 'components/MediumBaseText';
 import GreenTickerText from '../GreenTickerText';
 import RedTickerText from '../RedTickerText';
 import GreenArrow from './GreenArrow';
 import GreyArrow from './GreyArrow';
 import RedArrow from './RedArrow';
 import PropTypes from 'prop-types';
+import TickerMediumText from '../TickerMediumText';
+import TickerLightText from '../TickerLightText';
 
-function PropertyTicker({
-  addressText,
-  priceUpdateText = '$',
-  priceText,
-  variant,
-}) {
+function PropertyTicker({ addressText, priceUpdateText, priceText, variant }) {
   const ArrowComponent =
     (variant === 'increase' && GreenArrow) ||
     (variant === 'retain' && GreyArrow) ||
@@ -21,7 +16,7 @@ function PropertyTicker({
 
   const TickerTextComponent =
     (variant === 'increase' && GreenTickerText) ||
-    (variant === 'retain' && MediumBaseText) ||
+    (variant === 'retain' && TickerMediumText) ||
     (variant === 'decrease' && RedTickerText);
 
   return (
@@ -31,10 +26,10 @@ function PropertyTicker({
       <div>
         <ScAddressText>{addressText}</ScAddressText>
 
-        <PriceInfoBlock>
-          <TickerTextComponent>{priceUpdateText}</TickerTextComponent>
+        <PriceInfoBlock $priceUpdateText={priceUpdateText}>
+          <TickerTextComponent>{priceUpdateText || '$'}</TickerTextComponent>
 
-          <LightBaseText>{priceText}</LightBaseText>
+          <TickerLightText>{priceText}</TickerLightText>
         </PriceInfoBlock>
       </div>
     </ScPropertyTicker>
@@ -43,7 +38,8 @@ function PropertyTicker({
 
 const ScPropertyTicker = styled.div`
   height: 100%;
-  padding: 0.75em 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.75em;
   display: flex;
   align-items: flex-start;
 
@@ -52,8 +48,8 @@ const ScPropertyTicker = styled.div`
   }
 `;
 
-const ScAddressText = styled(MediumBaseText)`
-  margin-bottom: 0.25em;
+const ScAddressText = styled(TickerMediumText)`
+  margin-bottom: 0.125em;
   white-space: nowrap;
 `;
 
@@ -62,7 +58,7 @@ const PriceInfoBlock = styled.div`
   white-space: nowrap;
 
   > *:not(:last-child) {
-    margin-right: 1.5em;
+    margin-right: ${(p) => (p.$priceUpdateText ? '1.625em' : '2.9375em')};
   }
 `;
 

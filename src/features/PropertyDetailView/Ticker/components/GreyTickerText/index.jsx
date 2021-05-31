@@ -1,19 +1,13 @@
 import styled from 'styled-components';
-import MediumBaseText from 'components/MediumBaseText';
-import PropTypes from 'prop-types';
+import TickerMediumText from '../TickerMediumText';
 
-function GreyTickerText({ className, children }) {
-  return <ScGreyTickerText className={className}>{children}</ScGreyTickerText>;
+function GreyTickerText({ children, ...rest }) {
+  return <ScGreyTickerText {...rest}>{children}</ScGreyTickerText>;
 }
 
-const ScGreyTickerText = styled(MediumBaseText)`
+const ScGreyTickerText = styled(TickerMediumText)`
   color: ${(p) => p.theme.color.textDarkLowPriority};
   line-height: 100%;
 `;
-
-GreyTickerText.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default GreyTickerText;
