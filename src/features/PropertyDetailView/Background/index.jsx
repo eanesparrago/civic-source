@@ -31,8 +31,9 @@ const Neighbor = styled.div`
   left: 15%;
   bottom: 40%;
   font-weight: 500;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   color: #6ac1ff;
+  letter-spacing: 0.125em;
 `;
 
 export default Background;

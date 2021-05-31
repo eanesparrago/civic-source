@@ -17,47 +17,49 @@ function SaleInfo() {
 }
 
 const ScSaleInfo = styled.div`
-  margin: 1rem;
+  margin: 0.75em 0 0.75em 0.75em;
   position: relative;
   border: 0.25rem solid ${(p) => p.theme.color.blue};
-  border-radius: 1rem;
-  padding: 1.5rem 2rem;
+  border-radius: 1.09375em;
+  padding: 1.5em 2em 0.875em 2em;
   text-align: center;
   color: ${(p) => p.theme.color.textDarkHighPriority};
   background: rgba(255, 255, 255, 0.86);
 `;
 
 const ScMarketValueText = styled.div`
+  margin-bottom: 1.5em;
   font-weight: 300;
-  font-size: 1.3125rem;
-  letter-spacing: 0.125rem;
-  margin-bottom: 1.5rem;
+  font-size: 1.3125em;
+  letter-spacing: 0.1095em;
 `;
 
 const AddressBlock = styled.div`
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5em;
 
   > *:not(:last-child) {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25em;
   }
 `;
 
 const ScAddress1Text = styled.div`
   font-weight: 200;
-  font-size: 1.375rem;
-  letter-spacing: 0.125rem;
+  font-size: 1.375em;
+  letter-spacing: 0.08em;
+  line-height: 100%;
 `;
 
 const ScAddress2Text = styled.div`
   font-weight: 200;
-  font-size: 0.9rem;
-  letter-spacing: 0.125rem;
+  font-size: 0.9375em;
+  letter-spacing: 0.13em;
+  line-height: 100%;
 `;
 
 const ScReserveBidText = styled.div`
   font-weight: 200;
-  font-size: 0.9rem;
-  letter-spacing: 0.125rem;
+  font-size: 0.9em;
+  letter-spacing: 0.11em;
 `;
 
 export default SaleInfo;

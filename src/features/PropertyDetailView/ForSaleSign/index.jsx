@@ -30,6 +30,7 @@ const ScForSaleSign = styled.div`
   position: relative;
   padding-left: 2rem;
   padding-bottom: 8rem;
+  opacity: 0.85;
 
   .ForSaleSign-horizontalLine {
     height: 0.5rem;
