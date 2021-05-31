@@ -19,7 +19,7 @@ function SaleInfo() {
 const ScSaleInfo = styled.div`
   margin: 0.75em 0 0.75em 0.75em;
   position: relative;
-  border: 0.25rem solid ${(p) => p.theme.color.blue};
+  border: 0.25em solid ${(p) => p.theme.color.blue};
   border-radius: 1.09375em;
   padding: 1.5em 2em 0.875em 2em;
   text-align: center;

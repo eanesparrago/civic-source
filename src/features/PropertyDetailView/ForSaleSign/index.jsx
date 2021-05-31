@@ -26,23 +26,23 @@ const ScForSaleSignWrapper = styled.div`
 `;
 
 const ScForSaleSign = styled.div`
-  min-width: 24rem;
+  min-width: 24em;
   position: relative;
-  padding-left: 2rem;
-  padding-bottom: 8rem;
+  padding-left: 2em;
+  padding-bottom: 8em;
   opacity: 0.85;
 
   .ForSaleSign-horizontalLine {
-    height: 0.5rem;
+    height: 0.5em;
     background-color: ${(p) => p.theme.color.blue};
-    margin-left: -2rem;
+    margin-left: -2em;
   }
 
   .ForSaleSign-verticalLine {
     position: absolute;
-    left: calc(2rem - 0.5rem);
+    left: calc(2em - 0.5em);
     top: 0;
-    width: 0.5rem;
+    width: 0.5em;
     height: 100%;
     background-color: ${(p) => p.theme.color.blue};
   }

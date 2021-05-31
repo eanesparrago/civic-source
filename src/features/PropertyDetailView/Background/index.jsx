@@ -28,12 +28,19 @@ const ScImg = styled.img`
 
 const Neighbor = styled.div`
   position: absolute;
-  left: 15%;
-  bottom: 40%;
+  left: 12.7%;
+  right: 73.57%;
+  top: 53.06%;
+  bottom: 39.11%;
   font-weight: 500;
   font-size: 1.125em;
   color: #6ac1ff;
   letter-spacing: 0.125em;
+  height: 7.0625em;
+  width: 22em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default Background;
