@@ -19,10 +19,10 @@ function ForSaleSign() {
 
 const ScForSaleSignWrapper = styled.div`
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -20%);
   z-index: 1;
+  position: absolute;
+  left: 66.875em;
+  top: 40.25em;
 `;
 
 const ScForSaleSign = styled.div`
@@ -35,7 +35,7 @@ const ScForSaleSign = styled.div`
   .ForSaleSign-horizontalLine {
     height: 0.5em;
     background-color: ${(p) => p.theme.color.blue};
-    margin-left: -2em;
+    margin-left: -2.5em;
   }
 
   .ForSaleSign-verticalLine {
