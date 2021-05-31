@@ -80,7 +80,7 @@ const QuantityTickersBlock = styled.div`
   display: flex;
   width: 25.125em;
 
-  > * {
+  > *:not(:last-child) {
     flex-grow: 1;
   }
 `;

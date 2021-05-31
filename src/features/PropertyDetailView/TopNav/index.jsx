@@ -43,10 +43,10 @@ function TopNav() {
 
 const ScTopNav = styled.div`
   position: relative;
-  padding-top: 4rem;
-  padding-bottom: 2.375rem;
-  padding-left: 15rem;
-  padding-right: 15rem;
+  padding-top: 4.5625em;
+  padding-bottom: 2.375em;
+  padding-left: 15em;
+  padding-right: 13.9375em;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;

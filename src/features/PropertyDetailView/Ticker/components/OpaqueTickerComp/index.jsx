@@ -2,9 +2,9 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 import TickerMediumText from '../TickerMediumText';
 
-function OpaqueTickerComp({ labelText, value }) {
+function OpaqueTickerComp({ labelText, value, ...rest }) {
   return (
-    <ScOpaqueTickerComp>
+    <ScOpaqueTickerComp {...rest}>
       <ScLabelText>{labelText}</ScLabelText>
 
       {value}
@@ -15,7 +15,7 @@ function OpaqueTickerComp({ labelText, value }) {
 const ScOpaqueTickerComp = styled.div`
   background-color: ${(p) => p.theme.color.white};
   height: 100%;
-  padding: 0.5em 1.5em 0.75em 1.5em;
+  padding: 0.5em 0;
 `;
 
 const ScLabelText = styled(TickerMediumText)`
