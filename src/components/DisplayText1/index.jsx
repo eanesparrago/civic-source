@@ -11,12 +11,12 @@ function DisplayText1({ className, children }) {
 
 const ScDisplayText1 = styled.div`
   color: ${(p) => p.theme.color.textDarkHighPriority};
-  letter-spacing: 0.125em;
 
   span {
     font-size: 2.875em;
     font-weight: 300;
     line-height: 100%;
+    letter-spacing: 0.043em;
   }
 `;
 
