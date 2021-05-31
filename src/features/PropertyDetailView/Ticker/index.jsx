@@ -71,15 +71,27 @@ const ScTicker = styled.div`
 const PropertyTickersBlock = styled.div`
   flex-grow: 1;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding-left: 4.5625em;
+  padding-right: 7.1875em;
 `;
 
 const QuantityTickersBlock = styled.div`
   display: flex;
+  width: 25.125em;
+
+  > *:not(:last-child) {
+    flex-grow: 1;
+  }
 `;
 
 const PriceTickersBlock = styled.div`
   display: flex;
+  width: 25.125em;
+
+  > * {
+    flex-grow: 1;
+  }
 `;
 
 export default Ticker;

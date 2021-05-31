@@ -1,18 +1,15 @@
 import styled from 'styled-components';
-import LightBaseText from 'components/LightBaseText';
 import housesSvg from './houses.svg';
-import DisplayText1 from 'components/DisplayText1';
+import InfoTypography from '../components/InfoTypography';
 
 function PropertyAddress() {
   return (
     <ScPropertyAddress>
-      <InfoBlock>
-        <LightBaseText>Own</LightBaseText>
-
-        <DisplayText1>14 Flood St.</DisplayText1>
-
-        <LightBaseText>New Orleans, LA 70122</LightBaseText>
-      </InfoBlock>
+      <ScInfoTypography
+        line1Text="Own"
+        line2Text="14 Flood St."
+        Line3Text="New Orleans, LA 70122"
+      />
 
       <img src={housesSvg} alt="" />
     </ScPropertyAddress>
@@ -23,12 +20,8 @@ const ScPropertyAddress = styled.div`
   text-align: center;
 `;
 
-const InfoBlock = styled.div`
+const ScInfoTypography = styled(InfoTypography)`
   margin-bottom: 0.75em;
-
-  > *:not(:last-child) {
-    margin-bottom: 0.5em;
-  }
 `;
 
 export default PropertyAddress;

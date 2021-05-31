@@ -10,7 +10,7 @@ function IconButton({ imgSrc, imgAlt }) {
 }
 
 const ScIconButton = styled.button`
-  height: 5.625em;
+  height: 6.25em;
   cursor: pointer;
 `;
 

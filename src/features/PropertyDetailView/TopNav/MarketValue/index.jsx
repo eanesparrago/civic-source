@@ -1,25 +1,13 @@
-import DisplayText1 from 'components/DisplayText1';
-import LightBaseText from 'components/LightBaseText';
-import styled from 'styled-components';
+import InfoTypography from '../components/InfoTypography';
 
 function MarketValue() {
   return (
-    <ScMarketValue>
-      <LightBaseText>Market $40,000</LightBaseText>
-
-      <DisplayText1>$5,000</DisplayText1>
-
-      <LightBaseText>Reserve Price</LightBaseText>
-    </ScMarketValue>
+    <InfoTypography
+      line1Text="Market $40,000"
+      line2Text="$5,000"
+      Line3Text="Reserve Price"
+    />
   );
 }
-
-const ScMarketValue = styled.div`
-  text-align: center;
-
-  > *:not(:last-child) {
-    margin-bottom: 0.5em;
-  }
-`;
 
 export default MarketValue;

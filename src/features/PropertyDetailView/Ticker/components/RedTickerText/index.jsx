@@ -1,19 +1,13 @@
 import styled from 'styled-components';
-import MediumBaseText from 'components/MediumBaseText';
-import PropTypes from 'prop-types';
+import TickerMediumText from '../TickerMediumText';
 
-function RedTickerText({ className, children }) {
-  return <ScRedTickerText className={className}>{children}</ScRedTickerText>;
+function RedTickerText({ children, ...rest }) {
+  return <ScRedTickerText {...rest}>{children}</ScRedTickerText>;
 }
 
-const ScRedTickerText = styled(MediumBaseText)`
+const ScRedTickerText = styled(TickerMediumText)`
   color: ${(p) => p.theme.color.primaryRed};
   line-height: 100%;
 `;
-
-RedTickerText.propTypes = {
-  className: PropTypes.string,
-  children: PropTypes.node.isRequired,
-};
 
 export default RedTickerText;

@@ -24,7 +24,7 @@ const ScDials = styled.div`
 `;
 
 const Dial = styled.div`
-  background-color: #d8d8d8;
+  background-color: ${(p) => p.theme.color.white};
   width: 16em;
   height: 16em;
   border-radius: 10000px;
@@ -36,14 +36,14 @@ const ScLeftDial = styled(Dial)`
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%) translateX(-85%);
+  transform: translateY(-50%) translateX(-84%);
 `;
 
 const ScRightDial = styled(Dial)`
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translateY(-50%) translateX(85%);
+  transform: translateY(-50%) translateX(84%);
 `;
 
 export default Dials;

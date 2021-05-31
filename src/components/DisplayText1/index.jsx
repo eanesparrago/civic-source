@@ -16,6 +16,7 @@ const ScDisplayText1 = styled.div`
     font-size: 2.875em;
     font-weight: 300;
     line-height: 100%;
+    letter-spacing: 0.043em;
   }
 `;
 
