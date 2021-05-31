@@ -43,8 +43,8 @@ function TopNav() {
 
 const ScTopNav = styled.div`
   position: relative;
+  height: 15em;
   padding-top: 4.5625em;
-  padding-bottom: 2.375em;
   padding-left: 15em;
   padding-right: 13.9375em;
   display: flex;
@@ -52,12 +52,6 @@ const ScTopNav = styled.div`
   align-items: flex-start;
   z-index: 1;
   background: rgba(255, 255, 255, 0.85);
-
-  @media (max-width: ${(p) => p.theme.breakpoint.desktopL}) {
-    font-size: 0.9rem;
-    padding-top: 2em;
-    padding-bottom: 2em;
-  }
 `;
 
 const BigBlock = styled.div`
